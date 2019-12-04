@@ -19,7 +19,12 @@
     </mat-card-content>
 
     <mat-card-actions>
-      <button mat-fab-button color="primary">
+      <button
+        mat-fab-button
+        color="primary"
+        matTooltip="Logout"
+        aria-label="Button that displays a tooltip when focused or hovered over"
+      >
         <mat-icon matSuffix>power_settings_new</mat-icon>
         <a routerLink="process-selection"></a>
       </button>
@@ -54,25 +59,55 @@
   <mat-card-actions class="buttons">
     <div class="button-row-one">
       <div>
-        <button mat-flat-button color="primary">
+        <button
+          mat-flat-button
+          color="primary"
+          matTooltip="Pause"
+          aria-label="Button that displays a tooltip when focused or hovered over"
+        >
           <mat-icon matSuffix>pause-circle</mat-icon>
         </button>
-        <button mat-flat-button color="primary">
+        <button
+          mat-flat-button
+          color="primary"
+          matTooltip="Phone"
+          aria-label="Button that displays a tooltip when focused or hovered over"
+        >
           <mat-icon matSuffix>phone</mat-icon>
         </button>
-        <button mat-flat-button color="primary">
+        <button
+          mat-flat-button
+          color="primary"
+          matTooltip="Mute"
+          aria-label="Button that displays a tooltip when focused or hovered over"
+        >
           <mat-icon matSuffix>mic_off</mat-icon>
         </button>
       </div>
 
       <div>
-        <button mat-flat-button color="primary">
+        <button
+          mat-flat-button
+          color="primary"
+          matTooltip="Unmute"
+          aria-label="Button that displays a tooltip when focused or hovered over"
+        >
           <mat-icon matSuffix>keyboard_voice</mat-icon>
         </button>
-        <button mat-flat-button color="primary">
+        <button
+          mat-flat-button
+          color="primary"
+          matTooltip="Conference"
+          aria-label="Button that displays a tooltip when focused or hovered over"
+        >
           <mat-icon matSuffix>add</mat-icon>
         </button>
-        <button mat-flat-button color="primary">
+        <button
+          mat-flat-button
+          color="primary"
+          matTooltip="Merge Call"
+          aria-label="Button that displays a tooltip when focused or hovered over"
+        >
           <mat-icon matSuffix>call_merge</mat-icon>
         </button>
       </div>

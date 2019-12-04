@@ -18,6 +18,7 @@ import {
   MatIconModule,
   MatMenuModule,
   MatDialogModule,
+  MatTooltipModule,
   MatSlideToggleModule
 } from "@angular/material";
 import { MainpageComponent } from "./userlayout/mainpage/mainpage.component";
@@ -53,6 +54,7 @@ const routes: Routes = [
     MatMenuModule,
     MatDialogModule,
     MatSlideToggleModule,
+    MatTooltipModule,
     BrowserAnimationsModule
   ],
   providers: [],
