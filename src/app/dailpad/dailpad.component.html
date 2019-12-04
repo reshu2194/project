@@ -1,13 +1,23 @@
 <mat-card class="example-card">
   <mat-form-field class="example-full-width">
     <input matInput placeholder="" />
-    <!-- <button mat-icon-button><mat-icon> dialpad</mat-icon></button> -->
-    <mat-icon> dialpad</mat-icon>
+    <!-- <mat-icon> dialpad</mat-icon> -->
   </mat-form-field>
 
   <mat-card-actions>
-    <button mat-flat-button color="primary">
-      <a routerLink="process-selection">Login</a>
-    </button>
+    <div class="button-row">
+      <button mat-fab color="primary">Accept</button>
+      <button mat-fab color="primary">Reject</button>
+      <button mat-fab color="primary" [matMenuTriggerFor]="menu">
+        <mat-icon> dialpad</mat-icon>
+      </button>
+    </div>
+  </mat-card-actions>
+  <mat-card-actions>
+    <div class="button-row">
+      <button mat-fab disabled>Hold</button>
+      <button mat-fab disabled>Mute</button>
+      <button mat-fab disabled>Transfer</button>
+    </div>
   </mat-card-actions>
 </mat-card>

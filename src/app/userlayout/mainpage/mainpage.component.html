@@ -3,19 +3,34 @@
     <mat-card-title> </mat-card-title>
 
     <mat-card-content> </mat-card-content>
+    <!-- slider -->
+
+    <mat-card-content>
+      <section class="example-section">
+        <mat-slide-toggle
+          class="example-margin"
+          [color]="color"
+          [checked]="checked"
+          [disabled]="disabled"
+        >
+          Not Ready
+        </mat-slide-toggle>
+      </section>
+    </mat-card-content>
+
     <mat-card-actions>
-      <button mat-flat-button color="primary">
-        <a routerLink="process-selection">Logout</a>
+      <button mat-fab-button color="primary">
+        <mat-icon matSuffix>power_settings_new</mat-icon>
+        <a routerLink="process-selection"></a>
       </button>
       <mat-form-field>
         <mat-label>Select an option</mat-label>
         <mat-select [(value)]="selected">
           <mat-option>None</mat-option>
-          <mat-option value="option1">Ready</mat-option>
-          <mat-option value="option2">Not Ready</mat-option>
-          <mat-option value="option3">Lunch Break</mat-option>
-          <mat-option value="option4">Short Break</mat-option>
-          <mat-option value="option5">Briffing</mat-option>
+          <mat-option value="">Tea Break</mat-option>
+          <mat-option value="">Lunch Break</mat-option>
+          <mat-option value="">Short Break</mat-option>
+          <mat-option value="">Meeting</mat-option>
         </mat-select>
       </mat-form-field>
     </mat-card-actions>
@@ -24,19 +39,60 @@
   </mat-card-header>
 </mat-card>
 
+<!-- incoming call -->
+<mat-card class="dialpad">
+  <form class="inputbox">
+    <mat-form-field class="box">
+      <span matPrefix>+91 &nbsp;</span>
+      <input type="tel" matInput />
+      <button mat-flat-button color="primary">
+        <mat-icon matSuffix>phone</mat-icon>
+      </button>
+    </mat-form-field>
+  </form>
+
+  <mat-card-actions class="buttons">
+    <div class="button-row-one">
+      <div>
+        <button mat-flat-button color="primary">
+          <mat-icon matSuffix>pause-circle</mat-icon>
+        </button>
+        <button mat-flat-button color="primary">
+          <mat-icon matSuffix>phone</mat-icon>
+        </button>
+        <button mat-flat-button color="primary">
+          <mat-icon matSuffix>mic_off</mat-icon>
+        </button>
+      </div>
+
+      <div>
+        <button mat-flat-button color="primary">
+          <mat-icon matSuffix>keyboard_voice</mat-icon>
+        </button>
+        <button mat-flat-button color="primary">
+          <mat-icon matSuffix>add</mat-icon>
+        </button>
+        <button mat-flat-button color="primary">
+          <mat-icon matSuffix>call_merge</mat-icon>
+        </button>
+      </div>
+    </div>
+  </mat-card-actions>
+</mat-card>
+
 <!-- tabs -->
 
 <mat-card class="tabs">
   <mat-tab-group>
     <mat-tab label="Script">
       <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
-        <div *cdkVirtualFor="let item of items" class="example-item">
+        <div class="example-item">
           {{ item }}
           <span class="md-caption">Opening</span>
           <p class="md-body-1">
             <small class="md-caption"
-              >Hello [Contact’s Name], this is Michael Halper from SalesScripter </small
-            >.
+              >Hello [Contact’s Name], this is Michael Halper from SalesScripter
+            </small>
           </p>
           <span class="md-caption">Opening</span>
           <p class="md-body-1">

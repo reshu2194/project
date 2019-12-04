@@ -63,5 +63,69 @@ table {
 }
 
 .example-item {
-  height: 50px;
+  height: 600px;
+}
+/* dialpad */
+
+/* button css */
+
+/* buttons */
+div {
+  margin-top: 1px;
+}
+.dialpad {
+  height: 270px;
+  width: 270px;
+  margin-left: 190px;
+  margin-top: 37px;
+  display: inline-flex;
+}
+.inputbox {
+  min-width: 271px;
+
+  text-align-last: right;
+}
+
+.box {
+  width: 600px;
+  float: inherit;
+  display: inline;
+}
+
+.button-row button,
+.button-row a {
+  margin-right: 8px;
+}
+
+.button-row a {
+  margin-right: 0px;
+}
+mat-icon {
+  display: block;
+}
+
+/*888888888888888888888888*/
+.buttons {
+  height: max-content;
+  width: 291px;
+  margin-left: -56px;
+}
+.inputbox {
+}
+.button-row-one {
+  margin-top: 151px;
+  float: left;
+  width: inherit;
+  margin-right: -152px;
+  margin-left: -225px;
+}
+
+/* slider */
+
+.example-h2 {
+  margin: 10px;
+}
+
+.example-margin {
+  margin: 10px;
 }

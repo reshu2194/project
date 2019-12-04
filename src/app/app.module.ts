@@ -15,7 +15,10 @@ import {
   MatTabsModule,
   MatSelectModule,
   MatTableModule,
-  MatIconModule
+  MatIconModule,
+  MatMenuModule,
+  MatDialogModule,
+  MatSlideToggleModule
 } from "@angular/material";
 import { MainpageComponent } from "./userlayout/mainpage/mainpage.component";
 import { ScrollingModule } from "@angular/cdk/scrolling";
@@ -47,6 +50,9 @@ const routes: Routes = [
     MatTableModule,
     ScrollingModule,
     MatIconModule,
+    MatMenuModule,
+    MatDialogModule,
+    MatSlideToggleModule,
     BrowserAnimationsModule
   ],
   providers: [],

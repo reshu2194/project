@@ -1,5 +1,5 @@
 .example-card {
-  max-width: 400px;
+  max-width: 200px;
   margin: 100px auto;
   /* display: block; */
 }
@@ -17,3 +17,34 @@ mat-card-header {
 mat-card-actions {
   text-align: center;
 }
+mat-icon-button {
+  float: right;
+}
+
+/* button css */
+.button-row button,
+.button-row a {
+  margin-right: 8px;
+}
+
+/* buttons */
+/* div {
+  margin-top: 1px;
+}
+.button-row button {
+  height: 2em;
+  width: 2em;
+  margin: 9px;
+  margin-block-end: auto;
+} */
+/* mat-mini-fab {
+  display: block;
+  padding: 8px 0;
+  line-height: 18px;
+} */
+/* .button-row a {
+  margin-right: 0px;
+}
+mat-icon {
+  display: block;
+} */

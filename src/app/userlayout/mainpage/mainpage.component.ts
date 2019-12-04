@@ -9,7 +9,8 @@ export class MainpageComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-  items = Array.from({ length: 10 }).map((_, i) => `${i}`);
+
+  // items = Array.from({ length: 10 }).map((_, i) => `${i}`);
   displayedColumns = [
     "time",
     "duration",
@@ -19,6 +20,8 @@ export class MainpageComponent implements OnInit {
     "disposition"
   ];
   dataSource = ELEMENT_DATA;
+
+  // dialpad
 }
 export interface PeriodicElement {
   time: Date;
@@ -30,46 +33,6 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {
-    time: new Date(),
-    duration: "02.00",
-    customer_name: "John Smithe",
-    call_result: "success",
-    recording: "true",
-    disposition: "Network"
-  },
-  {
-    time: new Date(),
-    duration: "02.00",
-    customer_name: "John Smithe",
-    call_result: "success",
-    recording: "true",
-    disposition: "Network"
-  },
-  {
-    time: new Date(),
-    duration: "02.00",
-    customer_name: "John Smithe",
-    call_result: "success",
-    recording: "true",
-    disposition: "Network"
-  },
-  {
-    time: new Date(),
-    duration: "02.00",
-    customer_name: "John Smithe",
-    call_result: "success",
-    recording: "true",
-    disposition: "Network"
-  },
-  {
-    time: new Date(),
-    duration: "02.00",
-    customer_name: "John Smithe",
-    call_result: "success",
-    recording: "true",
-    disposition: "Network"
-  },
   {
     time: new Date(),
     duration: "02.00",
