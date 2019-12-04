@@ -28,7 +28,7 @@ import { DailpadComponent } from "./dailpad/dailpad.component";
 const routes: Routes = [
   { path: " ", component: LoginComponent },
   { path: "process-selection", component: ProcessSelectionComponent },
-  { path: "mainpage", component: MainpageComponent }
+  { path: "process-selection/mainpage", component: MainpageComponent }
 ];
 @NgModule({
   declarations: [

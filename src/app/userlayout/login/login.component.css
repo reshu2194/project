@@ -65,6 +65,7 @@
 }
 mat-card-header {
   justify-content: center;
+  color: cornflowerblue;
 }
 mat-card-actions {
   text-align: center;
