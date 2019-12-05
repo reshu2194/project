@@ -1,0 +1,136 @@
+/* grid css */
+mat-grid-tile {
+  background: lightblue;
+}
+
+/* header css */
+.example-card {
+  width: 150pc;
+  margin: 0px auto;
+  display: -webkit-box;
+  margin-right: 0px;
+  height: 66px;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+.example-full-width {
+  width: 100%;
+}
+mat-card-header {
+  justify-content: right;
+}
+mat-card-actions {
+  text-align: center;
+  justify-content: right;
+  margin-left: 529px;
+}
+mat-form-field {
+  max-width: 150px;
+  margin-left: -668px;
+}
+
+/* grid 4 */
+
+/* tabs */
+
+.example-h2 {
+  margin: 10px;
+  display: block;
+  align-content: center;
+}
+mat-card-actions {
+  text-align: center;
+}
+
+.tabs {
+  width: 454px;
+  height: inherit;
+}
+/* table */
+.example-container {
+  height: 280px;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+}
+
+/* scrooller */
+
+.example-viewport {
+  height: 463px;
+  width: unset;
+  /* border: 1px solid black; */
+}
+
+.example-item {
+  height: 600px;
+}
+/* dialpad */
+
+/* button css */
+
+/* buttons */
+div {
+  margin-top: 1px;
+}
+.dialpad {
+  height: 255px;
+  width: 213px;
+  margin-top: -217px;
+}
+/* .form {
+} */
+.inputbox {
+  min-width: 271px;
+
+  text-align-last: right;
+}
+
+.box {
+  width: 600px;
+  float: inherit;
+  display: inline;
+}
+
+.button-row button,
+.button-row a {
+  margin-right: 8px;
+}
+
+.button-row a {
+  margin-right: 0px;
+}
+mat-icon {
+  display: block;
+}
+
+/* dailpad */
+
+.buttons {
+  height: max-content;
+  width: 291px;
+  margin-left: -56px;
+}
+
+.button-row-one {
+  margin-top: 151px;
+  float: left;
+  width: inherit;
+  margin-right: -152px;
+  margin-left: -225px;
+}
+
+/* slider */
+
+.example-h2 {
+  margin: 10px;
+}
+
+.example-margin {
+  margin: 10px;
+}

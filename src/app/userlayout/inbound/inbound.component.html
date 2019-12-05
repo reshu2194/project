@@ -1,0 +1,209 @@
+<mat-grid-list cols="10" rowHeight="100px">
+  <mat-grid-tile colspan="2" rowspan="6"> </mat-grid-tile>
+  <mat-grid-tile colspan="8" rowspan="1">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title> </mat-card-title>
+
+        <mat-card-content> </mat-card-content>
+        <!-- slider -->
+
+        <mat-card-content>
+          <section class="example-section">
+            <mat-slide-toggle class="example-margin" [disabled]="disabled">
+              Not Ready
+            </mat-slide-toggle>
+          </section>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <button
+            mat-fab-button
+            color="primary"
+            matTooltip="Logout"
+            aria-label="Button that displays a tooltip when focused or hovered over"
+          >
+            <mat-icon matSuffix>power_settings_new</mat-icon>
+            <a routerLink="process-selection"></a>
+          </button>
+          <mat-form-field>
+            <mat-label>Select an option</mat-label>
+            <mat-select [(value)]="selected">
+              <mat-option>None</mat-option>
+              <mat-option value="">Tea Break</mat-option>
+              <mat-option value="">Lunch Break</mat-option>
+              <mat-option value="">Short Break</mat-option>
+              <mat-option value="">Meeting</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-card-actions>
+
+        <p>{{ selected }}</p>
+      </mat-card-header>
+    </mat-card>
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="2" rowspan="5">
+    <!-- <mat-card class="form">hello</mat-card> -->
+    <mat-card class="dialpad">
+      <form class="inputbox">
+        <mat-form-field class="box">
+          <span matPrefix>+91 &nbsp;</span>
+          <input type="tel" matInput />
+          <button mat-flat-button color="primary">
+            <mat-icon matSuffix>phone</mat-icon>
+          </button>
+        </mat-form-field>
+      </form>
+
+      <mat-card-actions class="buttons">
+        <div class="button-row-one">
+          <div>
+            <button
+              mat-flat-button
+              color="primary"
+              matTooltip="Pause"
+              aria-label="Button that displays a tooltip when focused or hovered over"
+            >
+              <mat-icon matSuffix>pause-circle</mat-icon>
+            </button>
+            <button
+              mat-flat-button
+              color="primary"
+              matTooltip="Phone"
+              aria-label="Button that displays a tooltip when focused or hovered over"
+            >
+              <mat-icon matSuffix>phone</mat-icon>
+            </button>
+            <button
+              mat-flat-button
+              color="primary"
+              matTooltip="Mute"
+              aria-label="Button that displays a tooltip when focused or hovered over"
+            >
+              <mat-icon matSuffix>mic_off</mat-icon>
+            </button>
+          </div>
+
+          <div>
+            <button
+              mat-flat-button
+              color="primary"
+              matTooltip="Unmute"
+              aria-label="Button that displays a tooltip when focused or hovered over"
+            >
+              <mat-icon matSuffix>transfer_with_a_section</mat-icon>
+            </button>
+            <button
+              mat-flat-button
+              color="primary"
+              matTooltip="Conference"
+              aria-label="Button that displays a tooltip when focused or hovered over"
+            >
+              <mat-icon matSuffix>add</mat-icon>
+            </button>
+            <button
+              mat-flat-button
+              color="primary"
+              matTooltip="Merge Call"
+              aria-label="Button that displays a tooltip when focused or hovered over"
+            >
+              <mat-icon matSuffix>call_merge</mat-icon>
+            </button>
+          </div>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="4" rowspan="5">
+    <mat-card class="tabs">
+      <mat-tab-group>
+        <mat-tab label="Script">
+          <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
+            <span class="md-caption">Opening</span>
+            <p>
+              <small
+                >Great. The purpose of my call is that we help inside sales
+                managers to make their team more successful with outbound phone
+                Great. The purpose of my call is that we help inside sales
+                managers to make their team more successful with outbound phone
+                Great. The purpose of my call is that we help inside sales
+                managers to make their team more successful with outbound phone
+                Great. The purpose of my call is that we help inside sales
+                managers to make their team more successful with outbound phone
+                Great. The purpose of my call is that we help inside sales
+                managers to make their team more successful with outbound phone
+                Great. The purpose of my call is that we help inside sales
+                managers to make their team more successful with outbound phone
+                Great. The purpose of my call is that we help inside sales
+                managers to make their team more successful with outbound phone
+                Great. The purpose of my call is that we help inside sales
+                managers to make their team more successful with outbound phone
+                Great. The purpose of my call is that we help inside sales
+                managers to make their team more successful with outbound phone
+                Great. The purpose of my call is that we help inside sales
+              </small>
+            </p>
+          </cdk-virtual-scroll-viewport>
+        </mat-tab>
+        <mat-tab label="History">
+          <div class="example-container mat-elevation-z8">
+            <table mat-table [dataSource]="dataSource">
+              <!-- Position Column -->
+              <ng-container matColumnDef="time">
+                <th mat-header-cell *matHeaderCellDef>Time</th>
+                <td mat-cell *matCellDef="let element">
+                  {{ element.position }}
+                </td>
+              </ng-container>
+
+              <!-- Name Column -->
+              <ng-container matColumnDef="duration">
+                <th mat-header-cell *matHeaderCellDef>Duration</th>
+                <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+              </ng-container>
+
+              <!-- Weight Column -->
+              <ng-container matColumnDef="customer_name">
+                <th mat-header-cell *matHeaderCellDef>Customer Name</th>
+                <td mat-cell *matCellDef="let element">{{ element.weight }}</td>
+              </ng-container>
+
+              <!-- Symbol Column -->
+              <ng-container matColumnDef="call_result">
+                <th mat-header-cell *matHeaderCellDef>Call Result</th>
+                <td mat-cell *matCellDef="let element">{{ element.symbol }}</td>
+              </ng-container>
+
+              <!-- Symbol Column -->
+              <ng-container matColumnDef="recording">
+                <th mat-header-cell *matHeaderCellDef>Recording</th>
+                <td mat-cell *matCellDef="let element">{{ element.symbol }}</td>
+              </ng-container>
+
+              <!-- Symbol Column -->
+              <ng-container matColumnDef="disposition">
+                <th mat-header-cell *matHeaderCellDef>Disposition</th>
+                <td mat-cell *matCellDef="let element">{{ element.symbol }}</td>
+              </ng-container>
+
+              <tr
+                mat-header-row
+                *matHeaderRowDef="displayedColumns; sticky: true"
+              ></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+            </table>
+          </div>
+        </mat-tab>
+        <mat-tab label="Variables">
+          <mat-checkbox class="example-h2">Real Estate</mat-checkbox>
+          <mat-checkbox class="example-h2">Credit Card</mat-checkbox>
+          <mat-checkbox class="example-h2">Loan</mat-checkbox>
+          <mat-checkbox class="example-h2">Insurance</mat-checkbox>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="2" rowspan="5"> </mat-grid-tile>
+</mat-grid-list>

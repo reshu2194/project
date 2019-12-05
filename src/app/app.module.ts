@@ -19,14 +19,16 @@ import {
   MatMenuModule,
   MatDialogModule,
   MatTooltipModule,
-  MatSlideToggleModule
+  MatSlideToggleModule,
+  MatGridListModule
 } from "@angular/material";
 import { MainpageComponent } from "./userlayout/mainpage/mainpage.component";
 import { ScrollingModule } from "@angular/cdk/scrolling";
 import { DailpadComponent } from "./dailpad/dailpad.component";
+import { InboundComponent } from "./userlayout/inbound/inbound.component";
 
 const routes: Routes = [
-  { path: " ", component: LoginComponent },
+  { path: " ", component: InboundComponent },
   { path: "process-selection", component: ProcessSelectionComponent },
   { path: "process-selection/mainpage", component: MainpageComponent }
 ];
@@ -37,7 +39,8 @@ const routes: Routes = [
     LoginComponent,
     ProcessSelectionComponent,
     MainpageComponent,
-    DailpadComponent
+    DailpadComponent,
+    InboundComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +58,7 @@ const routes: Routes = [
     MatDialogModule,
     MatSlideToggleModule,
     MatTooltipModule,
+    MatGridListModule,
     BrowserAnimationsModule
   ],
   providers: [],
